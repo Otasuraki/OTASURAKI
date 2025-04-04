@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональный SMM-специалист и дизайнер. Motion Design, After Effects, создание контента.">
+    <meta property="og:title" content="OTASURAKI | SMM & Designer">
+    <meta property="og:image" content="https://example.com/share-image.jpg">
+    
+    <title>OTASURAKI | SMM & Designer</title>
+    
+    <!-- Preload важных ресурсов -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Oswald:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0A0A0A">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">OTASURAKI</div>
+            <div class="preloader__progress"></div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно -->
+    <div class="modal" aria-hidden="true" role="dialog">
+        <button class="modal__close" aria-label="Закрыть окно">&times;</button>
+        <img class="modal__content" alt="" loading="lazy">
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar" aria-label="Основная навигация">
+        <div class="container">
+            <a href="#" class="logo">OTASURAKI</a>
+            
+            <button class="burger-menu" aria-label="Меню" aria-expanded="false">
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+                <span class="burger-menu__bar"></span>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="#showcase" class="nav-link">Портфолио</a></li>
+                <li><a href="#stats" class="nav-link">Результаты</a></li>
+                <li><a href="#cases" class="nav-link">Кейсы</a></li>
+                <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            </ul>
+            
+            <button class="theme-toggle" aria-label="Переключить тему">🌓</button>
+        </div>
+    </nav>
+
+    <!-- Герой -->
+    <section class="hero section">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">MOTION & MEDIA DESIGN</h1>
+                <span class="hero__subtitle">After Effects • Photoshop • Копирайтинг</span>
+                
+                <div class="hero__about glass">
+                    <p>Мне 22 года, занимаюсь дизайном 5+ лет</p>
+                    <p>SMM-менеджер в <a href="https://rmrp.ru/" target="_blank" rel="noopener" class="accent-link">RMRP</a></p>
+                    <p>Изучаю: Motion Design • C++ • JS • Английский (C1) • 3D graphics</p>
+                    
+                    <div class="hero__contacts">
+                        <h3>Свяжись со мной:</h3>
+                        <div class="contacts__links">
+                            <a href="https://t.me/Otasuraki" target="_blank" rel="noopener" class="button">
+                                <i class="fab fa-telegram" aria-hidden="true"></i> Telegram
+                            </a>
+                            <a href="mailto:Otasuraki@gmail.com" class="button">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Gmail
+                            </a>
+                            <a href="https://vk.com/otasuraki" target="_blank" rel="noopener" class="button">
+                                <i class="fab fa-vk" aria-hidden="true"></i> ВКонтакте
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <picture class="hero__image">
+                <source srcset="images/my-photo.webp" type="image/webp">
+                <source srcset="images/my-photo.avif" type="image/avif">
+                <img src="images/my-photo.jpg" alt="Фото Владлена" width="400" height="400" loading="eager">
+            </picture>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="showcase" class="showcase section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">КРЕАТИВНЫЕ РАБОТЫ</h2>
+                <p class="section__subtitle">От постановки кадра до финальной коррекции</p>
+            </div>
+            
+            <div class="works-grid">
+                <article class="work-card scroll-reveal">
+                    <div class="work-card__hint">Hover to play</div>
+                    <video class="work-card__media" muted loop preload="none" poster="./images/223.png">
+                        <source src="./videos/M5.webm" type="video/webm">
+                        <source src="./videos/M5.mp4" type="video/mp4">
+                    </video>
+                    <div class="work-card__overlay">
+                        <h3 class="work-card__title">BMW M5</h3>
+                        <p class="work-card__description">Видео с динамичными переходами</p>
+                    </div>
+                </article>
+
+                <article class="work-card scroll-reveal">
+                    <picture>
+                        <source srcset="images/ban.webp" type="image/webp">
+                        <img class="work-card__media" src="images/ban.png" alt="Пример работы" loading="lazy" width="600" height="338">
+                    </picture>
+                    <div class="work-card__overlay">
+                        <h3 class="work-card__title">Сделано для обложки RMRP</h3>
+                        <p class="work-card__description">VK\DISCORD\RAGE:MP</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section id="stats" class="stats-section section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">МОИ РЕЗУЛЬТАТЫ</h2>
+                <p class="section__subtitle">Рост аудитории и вовлеченности на платформах, которыми я управляю</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="platform-card glass scroll-reveal">
+                    <h3><i class="fab fa-telegram" aria-hidden="true"></i> Telegram</h3>
+                    <a href="https://t.me/rmrp_official" target="_blank" rel="noopener">t.me/rmrp_official</a>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 105%"></div>
+                    </div>
+                    <p>Подписчики: <span class="counter" data-target="21000">0</span> → <span class="counter" data-target="41000">0</span> (+105%)</p>
+                    <p>Просмотры: <span class="counter" data-target="39000">0</span> → <span class="counter" data-target="39000">0</span> (+160%)</p>
+                </div>
+
+                <div class="platform-card glass scroll-reveal">
+                    <h3><i class="fab fa-vk" aria-hidden="true"></i> ВКонтакте</h3>
+                    <a href="https://vk.com/rmroleplay" target="_blank" rel="noopener">vk.com/rmroleplay</a>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 37.5%"></div>
+                    </div>
+                    <p>Подписчики: <span class="counter" data-target="55000">0</span> → <span class="counter" data-target="55000">0</span> (+37.5%)</p>
+                    <p>Просмотры: <span class="counter" data-target="15000">0</span> → <span class="counter" data-target="15000">0</span> (+150%)</p>
+                </div>
+
+                <div class="platform-card glass scroll-reveal">
+                    <h3><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</h3>
+                    <a href="https://www.instagram.com/rmrp_official" target="_blank" rel="noopener">@rmrp_official</a>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 100%"></div>
+                    </div>
+                    <p>Подписчики: <span class="counter" data-target="3800">0</span> → <span class="counter" data-target="3800">0</span></p>
+                    <p>Просмотры: <span class="counter" data-target="7000">0</span></p>
+                </div>
+
+                <div class="platform-card glass scroll-reveal">
+                    <h3><i class="fab fa-discord" aria-hidden="true"></i> Discord</h3>
+                    <a href="https://discord.com/invite/7v3kRbfg7S" target="_blank" rel="noopener">RMRP Discord</a>
+                    <div class="progress-bar">
+                        <div class="progress-bar__fill" style="width: 267%"></div>
+                    </div>
+                    <p>Отдел Новости: <span class="counter" data-target="11000">0</span> → <span class="counter" data-target="11000">0</span> просмотров (+267%)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section id="cases" class="cases-section section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">КЕЙСЫ</h2>
+                <p class="section__subtitle">Примеры реализованных проектов и достигнутых результатов</p>
+            </div>
+            
+            <div class="cases-container">
+                <!-- Кейс 1 -->
+                <article class="case-item scroll-reveal">
+                    <div class="case-content glass">
+                        <h3 class="case-name">За 1 год работы</h3>
+                        <p class="case-description">Результаты работы в проекте RMRP за первый год</p>
+                        <div class="case-details">
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="190">0</span>
+                                <span class="detail-label">Рост аудитории</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="2000">0</span>
+                                <span class="detail-label">Активных игроков</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="50">0</span>
+                                <span class="detail-label">Созданных ассетов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-graphic graphic-growth">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <div class="graphic-bar-container">
+                            <div class="graphic-bar" style="height: 80%"></div>
+                            <div class="graphic-bar" style="height: 60%"></div>
+                            <div class="graphic-bar" style="height: 95%"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Кейс 2 -->
+                <article class="case-item reverse scroll-reveal">
+                    <div class="case-content glass">
+                        <h3 class="case-name">Вирусные шортсы</h3>
+                        <p class="case-description">Серия коротких видео для привлечения новой аудитории</p>
+                        <div class="case-details">
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="1200000">0</span>
+                                <span class="detail-label">Охват за месяц</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="3400">0</span>
+                                <span class="detail-label">Новых подписчиков</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="85">0</span>
+                                <span class="detail-label">Retention rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-graphic graphic-viral">
+                        <i class="fas fa-virus" aria-hidden="true"></i>
+                        <div class="graphic-waves">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Кейс 3 -->
+                <article class="case-item scroll-reveal">
+                    <div class="case-content glass">
+                        <h3 class="case-name">Коллаборации с ютуберами</h3>
+                        <p class="case-description">Привлечение популярных создателей контента</p>
+                        <div class="case-details">
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="100">0</span>
+                                <span class="detail-label">Привлеченных ютуберов</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="5000000">0</span>
+                                <span class="detail-label">Общий охват</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-value counter" data-target="20">0</span>
+                                <span class="detail-label">Рост активности</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-graphic graphic-collab">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                        <div class="graphic-dots">
+                            <div class="dot-row">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="dot-row">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <a href="https://t.me/Otasuraki" target="_blank" rel="noopener" class="footer__title">ДАВАЙ РАБОТАТЬ ВМЕСТЕ</a>
+                <p class="footer__description">Готов обсудить ваш проект и предложить свои идеи для создания крутого визуального контента</p>
+                
+                <div class="footer__links">
+                    <a href="https://t.me/Otasuraki" target="_blank" rel="noopener" class="button button--large">
+                        <i class="fab fa-telegram" aria-hidden="true"></i> Telegram
+                    </a>
+                    <a href="mailto:Otasuraki@gmail.com" class="button button--large">
+                        <i class="fas fa-envelope" aria-hidden="true"></i> Gmail
+                    </a>
+                    <a href="https://vk.com/otasuraki" target="_blank" rel="noopener" class="button button--large">
+                        <i class="fab fa-vk" aria-hidden="true"></i> ВКонтакте
+                    </a>
+                </div>
+                
+                <p class="footer__copyright">© <span id="current-year">2025</span> OTASURAKI. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <button class="back-to-top" aria-label="Наверх">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Скрипты -->
+    <script src="js/app.js" defer></script>
+    
+    <!-- Иконка для PWA -->
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
+        
+        // Текущий год в футере
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
